@@ -1,0 +1,337 @@
+﻿<Window x:Class="лаба_7_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:лаба_7_8"
+        mc:Ignorable="d"
+        Title="7-8 лаба" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="tabControl" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TabItem Header="1 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="button1Zad" Content="Инициализация строки" Margin="84,127,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246" Click="button1Zad_Click"/>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock1zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <Button x:Name="button2zad2" Content="Замена" Margin="84,190,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246" Click="button2zad2_Click" Grid.RowSpan="2"/>
+                    <TextBox x:Name="textBox1zad" TextWrapping="Wrap" Text="" Width="246" HorizontalAlignment="Left" VerticalAlignment="Top" Height="102" Margin="84,10,0,0"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="2 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="textBox2zad" TextWrapping="Wrap" Text="" Margin="0,25,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="64" Width="171"/>
+                    <Button x:Name="button2zad" Content="Вывод строки" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,163,0,0" Width="171" Click="button2zad_Click"/>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock2zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="3 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock3zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox3zad" TextWrapping="Wrap" Text="" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="236" Height="85"/>
+                    <Button x:Name="button3zad" Content="Вывод символов" Margin="0,157,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="236" Click="button3zad_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="5 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock4zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox4zad" TextWrapping="Wrap" Text="" Width="210" HorizontalAlignment="Center" VerticalAlignment="Top" Height="99" Margin="0,22,0,0"/>
+                    <Button x:Name="button4zad" Content="Показать номера" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,193,0,0" Grid.RowSpan="2" Width="210" Click="button4zad_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="6 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock6zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox6Zad" TextWrapping="Wrap" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top" Height="93" Margin="0,20,0,0"/>
+                    <Button x:Name="button6Zad" Content="Вывод символов с шагом" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,193,0,0" Grid.RowSpan="2" Width="200" Click="button6Zad_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="7 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock7zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox7Zad" TextWrapping="Wrap" Text="" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top" Height="93" Margin="0,20,0,0"/>
+                    <Button x:Name="button7zad" Content="Количество + и - " Margin="0,41,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Grid.Row="1" Click="button7Zad_Click"/>
+                    <Button x:Name="button7zad1" Margin="0,146,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Сколько нулей" Width="200" Click="button7zad1_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="8 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock8zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+
+                    </StackPanel>
+                    <TextBox x:Name="textBox8Zad" TextWrapping="Wrap" Text="" Width="175" HorizontalAlignment="Center" VerticalAlignment="Center" Height="87"/>
+                    <Button x:Name="button7Zad" Content="Поиск кто раньше" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,36,0,0" Grid.Row="1" Width="175" Click="button7Zad_Click_1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="9 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock9zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox9Zad" TextWrapping="Wrap" Text="" Width="273" HorizontalAlignment="Center" VerticalAlignment="Center" Height="56"/>
+                    <TextBox x:Name="textBox9Zad1" TextWrapping="Wrap" Text="" Width="273" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Margin="0,175,0,0" Grid.RowSpan="2"/>
+                    <Button x:Name="button" Content="Сравнить строки" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="273" Height="33" Click="button_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="10 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock10zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox10Zad" TextWrapping="Wrap" Text="" Width="207" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
+                    <Button x:Name="button10Zad" Content="проверить" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,203,0,0" Grid.RowSpan="2" Width="207" Click="button10Zad_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="11 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock11zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox11Zad" TextWrapping="Wrap" Text="" Width="226" HorizontalAlignment="Center" VerticalAlignment="Center" Height="94"/>
+                    <Button x:Name="button11Zad" Content="Проверка строки" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Width="226" Click="button11Zad_Click" Grid.Row="1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="12 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock12zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <Button x:Name="button12Zad" Content="Найти количество цифр" HorizontalAlignment="Center" VerticalAlignment="Top" Width="198" Margin="0,10,0,0" Grid.Row="1"/>
+                    <TextBox x:Name="textBox12Zad" TextWrapping="Wrap" Text="" Width="198" HorizontalAlignment="Center" VerticalAlignment="Center" Height="99"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="13 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock13zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox13Zad" TextWrapping="Wrap" Text="" Width="185" HorizontalAlignment="Center" VerticalAlignment="Top" Height="85" Margin="0,43,0,0"/>
+                    <Button x:Name="button1" Content="Определить символы" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" Width="185" Click="button1_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="14 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock14zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <Button x:Name="button14Zad" Content="word на letter" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1" Width="178" Click="button14Zad_Click"/>
+                    <TextBox x:Name="textBox14Zad" TextWrapping="Wrap" Text="" Width="178" HorizontalAlignment="Center" VerticalAlignment="Center" Height="71"/>
+                </Grid>
+            </TabItem>
+            <TabItem  Header="15 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock15zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <Button x:Name="button15Zad" Content="Инициализация строки" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,163,0,0" Width="134" Click="button15Zad_Click"/>
+                    <TextBox x:Name="textBox15Zad" TextWrapping="Wrap" Text="" Width="134" HorizontalAlignment="Center" VerticalAlignment="Top" Height="88" Margin="0,32,0,0"/>
+                    <Button x:Name="button15Zad2" Content="Удалить x " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Row="1" Width="134" Click="button15Zad2_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="17 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock17zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <Button x:Name="button17Zad" Content="Удалить abc" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,46,0,0" Grid.Row="1" Width="171" Click="button17Zad_Click"/>
+                    <TextBox x:Name="textBox17Zad" TextWrapping="Wrap" Text="" Width="172" HorizontalAlignment="Center" VerticalAlignment="Center" Height="71"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="18 задание">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Height="205" Width="379">
+                            <TextBlock x:Name="textBlock18zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
+                        </Border>
+                    </StackPanel>
+                    <TextBox x:Name="textBox18Zad" TextWrapping="Wrap" Text="" Width="160" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107"/>
+                    <Button x:Name="button18Zad" Content="Подсчёт вхождений aba" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,56,0,0" Grid.Row="1" Width="160" Click="button18Zad_Click"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
