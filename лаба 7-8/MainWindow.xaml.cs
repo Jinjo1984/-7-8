@@ -190,6 +190,7 @@ namespace лаба_7_8
             {
                 str = str.Replace("abc", "www");
             }
+           ///
             else
             {
                 str += "zzz";
@@ -317,5 +318,7 @@ namespace лаба_7_8
             }
             textBlock18zad.Text = "Число вхождений: " + k;
         }
+
+       
     }
 }
